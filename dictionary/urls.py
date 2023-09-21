@@ -18,13 +18,13 @@ from django.contrib import admin
 from django.urls import path, include  # new
 
 from rest_framework import routers  # new
-from words.api import viewsets as wordsviewset  # new
+from words.api import viewsets
 
 router = routers.DefaultRouter()  # new
 
-router.register(r'words/', wordsviewset.WordViewSet, basename='Words')  # new
+router.register(r'words', viewsets.WordViewSet, basename='Words')  # new
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls))  # new
+    path('', include(router.urls))  # new
 ]

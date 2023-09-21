@@ -4,5 +4,5 @@ from words import models
 
 class WordSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Words
+        model = models.Word
         fields = '__all__'
