@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
+selenium = "*"
+factory-boy = "*"
 
 [dev-packages]
 autopep8 = "*"
