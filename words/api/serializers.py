@@ -6,3 +6,4 @@ class WordSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Word
         fields = '__all__'
+        search_fields = ['word']

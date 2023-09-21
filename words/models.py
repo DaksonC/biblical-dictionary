@@ -6,7 +6,7 @@ from uuid import uuid4
 
 class Word(models.Model):
     id_word = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    word = models.CharField(max_length=255)
+    word = models.CharField(max_length=255, unique=True)
     description = models.TextField()
     text_reference = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)

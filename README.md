@@ -19,6 +19,10 @@ pipenv shell
 ```
 
 ```python
+pipenv run python manage.py makemigrations
+```
+
+```python
 pipenv run python manage.py migrate
 ```
 
