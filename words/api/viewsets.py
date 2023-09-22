@@ -1,7 +1,8 @@
 from rest_framework import viewsets
+from rest_framework import filters
+
 from words.api import serializers
 from words import models
-from rest_framework import filters
 
 
 class WordViewSet(viewsets.ModelViewSet):
