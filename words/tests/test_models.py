@@ -1,5 +1,3 @@
-# words/tests/test_models.py
-
 from django.test import TestCase
 from django.utils import timezone
 from factory import Faker
