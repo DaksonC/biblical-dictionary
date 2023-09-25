@@ -5,4 +5,4 @@ repos:
         name: Rodando testes unitários
         language: system
         pass_filenames: false  
-        entry: pipenv run python manage.py test words.tests.test_serializers && pipenv run python manage.py test words.tests.test_viewsets && pipenv run python manage.py test words.tests.test_models
+        entry: pipenv run python manage.py test words.tests.test_integration
