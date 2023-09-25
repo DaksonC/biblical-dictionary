@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 selenium = "*"
 factory-boy = "*"
+pre-commit = "*"
 
 [dev-packages]
 autopep8 = "*"
