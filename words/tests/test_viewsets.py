@@ -20,6 +20,6 @@ class WordViewSetTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_get_word_detail(self):
-        response = self.client.get(f'//api/v1/words/{self.word.id_word}/')
+        response = self.client.get(f'/api/v1/words/{self.word.id_word}/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data, self.serializer.data)
