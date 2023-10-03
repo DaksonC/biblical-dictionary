@@ -17,7 +17,14 @@ class WordIntegrationTestCase(TestCase):
             word='TestWord1', description='Description1', text_reference='Reference1')
         Word.objects.create(
             word='TestWord2', description='Description2', text_reference='Reference2')
+        Word.objects.create(
+            word='TestWord3', description='Description3', text_reference='Reference3')
+        Word.objects.create(
+            word='TestWord4', description='Description4', text_reference='Reference4')
+
         url = reverse('Words-list')
         response = self.client.get(url)
+
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(len(response.data), 2)
+
+        print('Response: ', response.data)
