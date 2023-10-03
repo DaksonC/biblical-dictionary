@@ -1,12 +1,13 @@
 # biblical_dictionary
 
-This project consists of a Bible dictionary created with Django and Pipenv.
+This project consists of a Bible dictionary created with Django, Django REST framework and Pipenv.
 
 ### Technology
 
 - Python
 - Pipenv
 - Djando
+- Django REST Framework
 
 ## Installation
 
