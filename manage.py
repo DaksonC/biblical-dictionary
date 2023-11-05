@@ -7,7 +7,7 @@ import sys
 port = os.environ.get("PORT")
 
 if not port:
-    port = 8000
+    port = 8080
 
 port = str(port)
 
