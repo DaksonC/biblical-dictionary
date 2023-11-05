@@ -6,12 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
-selenium = "*"
-factory-boy = "*"
-pre-commit = "*"
 
 [dev-packages]
-autopep8 = "*"
 
 [requires]
-python_version = "3.11"
+python_version = "3.10"
