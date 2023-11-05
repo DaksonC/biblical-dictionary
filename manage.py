@@ -4,17 +4,10 @@ import os
 import sys
 
 
-port = os.environ.get("PORT", 8080)
-
-if not port:
-    port = 8000
-
-port = str(port)
-
-
 def main():
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dictionary.settings")
+    port = os.environ.get("PORT", 8000)
 
     if port:
         os.environ["PORT"] = port
