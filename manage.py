@@ -4,7 +4,7 @@ import os
 import sys
 
 
-port = os.environ.get("PORT") or 8000
+port = os.environ.get("PORT", 8080)
 
 if not port:
     port = 8000
