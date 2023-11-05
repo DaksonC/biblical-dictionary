@@ -4,21 +4,9 @@ import os
 import sys
 
 
-port = os.environ.get("PORT", 8080)
-
-if not port:
-    port = 8080
-
-port = str(port)
-
-
 def main():
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dictionary.settings")
-
-    if port:
-        os.environ["PORT"] = port
-
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
